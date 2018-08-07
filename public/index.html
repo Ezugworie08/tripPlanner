@@ -4,12 +4,66 @@
 <head>
   <title>Trip Planner</title>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css"></link>
   <script src="./bundle.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
-  <div id="map"></div>
+<body class="container-fluid">
+  <header class="row">
+    <nav id="nav">Nav bar</nav>
+  </header>
+
+  <div class="row">
+    <div id="map" class="col-md-8"></div>
+
+    <aside class="col-md-4">
+
+      <div id="options-panel">
+        <div class="hotel">
+          <label for="hotels">Hotels</label>
+        <select id="hotels" name="hotels">
+          <option value="ritz">Ritz-Carlton</option>
+          <option value="hilton">Hilton</option>
+          <option value="waldorf">Waldorf Astoria</option>
+        </select>
+      </div>
+      <div class="restaurant">
+        <label for="restaurants">Restaurants</label>
+        <select id="restaurants" name="restaurants">
+          <option value="mcdonalds">McDonalds</option>
+        </select>
+      </div>
+        <div>
+          <label for="things-to-do">Things To Do</label>
+          <select id="things-to-do" name="things-to-do">
+            <option value="horseback-riding">Horseback Riding</option>
+            <option value="goat-yoga">Goat Yoga</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="itinerary">
+        <div>
+          <h4>My Hotel</h4>
+        </div>
+        <div>
+          <h4>My Restaurants</h4>
+        </div>
+        <div>
+          <h4>My Activities</h4>
+        </div>
+
+      </div>
+    </aside>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
