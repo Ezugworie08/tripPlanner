@@ -5,28 +5,27 @@
 body {
   margin: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: #c1b5ad;
+  background-color: #fff;
+}
+
+aside.col-md-3 {
+  padding: 0 !important;
 }
 
 #map {
-  height: 100vh;
-  width: 100vw;
-  margin-left: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #options-panel {
+  margin: 0 0 2rem 0;
+  padding: 0;
 }
 
-#itinerary div {
-
+#itinerary {
+  margin: 1rem 0 0 0;
+  padding: 0;
 }
-
-aside {
-}
-
-nav {
-  height: 50px;
-  width: 100%;
-  background-color: blueviolet;
+.inner-itinerary {
+  margin-bottom: 1rem;
 }
